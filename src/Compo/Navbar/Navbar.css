@@ -1,41 +1,91 @@
-nav{
+nav {
+  padding: 10px 2%;
+  justify-content: space-between;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-left .menu-icon {
+  width: 22px;
+  margin-right: 25px;
+}
+.nav-left .logo {
+  width: 100px;
+}
+.nav-middle .search-box {
+  border: 1px solid #ccc;
+  margin-right: 15px;
+  padding: 8px 12px;
+  border-radius: 25px;
+}
+.nav-middle .search-box input {
+  width: 400px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+.nav-middle .search-box img {
+  width: 15px;
+}
+.nav-right img {
+  width: 25px;
+ 
+  margin-right: 25px;
+}
+.nav-right .user-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+@media screen and (max-width: 900px) {
+  nav {
     padding: 10px 2%;
     justify-content: space-between;
-    box-shadow: 0  0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     background: #fff;
     position: sticky;
-    top: 0;
+    top: 0; /* Fixes it to the bottom */
+    width: 100%;
     z-index: 10;
-}
-.nav-left .menu-icon{
-    width: 22px;
-    margin-right: 25px;
-}
-.nav-left .logo{
-    width: 130px;
-}
-.nav-middle .search-box{
-    border: 1px solid #ccc;
-    margin-right: 15px;
-    padding: 8px 12px;
-    border-radius: 25px;
-}
-.nav-middle .search-box input{
-    width: 400px;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .nav-right .user-icon {
+    display: none;
+  }
+  
+  .inputOff {
+    width: 0.1px;
+    height: 2px;
+    overflow: hidden;
+    padding: 0px;
+    transition: all 0.4s ease-in-out;
+    
+  }
+  .inputOn {
+    
+    width: 150px;
     border: 0;
     outline: 0;
     background: transparent;
-}
-.nav-middle .search-box img{
-    width: 15px;
-}
-.nav-right img{
-    width: 25px;
-    margin-right: 25px;
+    transition: all 0.4s ease-in-out;
+    
+  }
 
+  .sm-nav {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .nav-left .logo {
+  width: 70px;
 }
-.nav-right .user-icon{
-    width: 35px;
-    border-radius: 50%;
-
 }

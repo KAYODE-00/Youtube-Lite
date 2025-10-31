@@ -3,7 +3,21 @@
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  
 }
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+/* Optional example */
+body.dark-mode nav {
+  background: #1e1e1e;
+}
+
+
+
+
 
 a {
   text-decoration: none;
